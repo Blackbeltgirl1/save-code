@@ -1,0 +1,7 @@
+ for i in range(0, len(RNA), 3):
+            string = RNA[i:i+3]
+            if RNA[i:i+3] in rna2protein.keys():
+                protein.append(rna2protein.get(string))
+            else:
+                protein.append(RNA[i:i+3])
+        final_string = "".join(protein)
